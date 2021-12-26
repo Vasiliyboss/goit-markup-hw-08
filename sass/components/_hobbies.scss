@@ -1,0 +1,27 @@
+.annexes {
+  display: flex;
+  flex-wrap: wrap;
+}
+.annexes__item {
+  margin-right: 30px;
+  position: relative;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.annexes__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--main-title-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

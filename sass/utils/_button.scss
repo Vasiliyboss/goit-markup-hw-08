@@ -1,0 +1,14 @@
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--third-title-color);
+  color: var(--main-title-color);
+  min-width: 200px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: var(--third-title-color);
+}
