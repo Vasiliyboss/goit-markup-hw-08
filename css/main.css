@@ -10,26 +10,6 @@
   --main-btn-color: #f5f4fa;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -57,17 +37,29 @@ body {
   text-decoration: none;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .container {
-  box-sizing: border-box;
-  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .title {
@@ -230,47 +222,69 @@ body {
 }
 
 .about__body {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  padding-top: 25px;
 }
 
-.about__list {
-  display: flex;
-  flex-wrap: wrap;
+.about__body .about__list {
+  padding: 0;
+  margin: 0;
 }
 
-.about__item {
-  width: 270px;
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .about__body .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.about__item:nth-child(4n) {
-  margin-right: 0;
+.about__body .about__item {
+  text-align: center;
 }
 
-.about__column {
-  width: 270px;
-  height: 120px;
-  background-color: var(--main-btn-color);
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .about__body .about__item {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
-.about__title {
+@media screen and (min-width: 1200px) {
+  .about__body .about__item {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__body .about__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.about__body .about__column {
+  background-color: teal;
+}
+
+.about__body .about__title {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  text-align: start;
 }
 
-.about__text {
+.about__body .about__text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  text-align: start;
 }
 
 .annexes {
