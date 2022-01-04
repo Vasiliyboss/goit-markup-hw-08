@@ -1,4 +1,17 @@
+@media screen and (max-width: 1199px) {
+  .hobbies {
+    display: none;
+  }
+}
+.hobbies {
+  padding: 0;
+}
+.hobbies__container {
+  padding: 0;
+}
 .annexes {
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   flex-wrap: wrap;
 }

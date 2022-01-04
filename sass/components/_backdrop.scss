@@ -23,6 +23,10 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
 }
 .modal-window__button {
   width: 30px;
@@ -109,7 +113,16 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .content-checkbox__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
   display: flex;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.17;
+  }
 }
 .content-checkbox__span {
   width: 16px;
