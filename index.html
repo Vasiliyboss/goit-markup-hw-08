@@ -52,7 +52,6 @@
             </button>
         </div>
         <div class="mob-menu is-hidden">
-            <div class="container">
                 <div class="mob-menu__top">
                     <button class="mob-menu__close">
                         <svg class="mob-menu__icon" width="40" height="40">
@@ -63,8 +62,6 @@
                         <li class="mob-menu__item"><a class="mob-menu__link link" href="">Студия</a></li>
                         <li class="mob-menu__item"><a class="mob-menu__link link" href="./portfolio.html">Портфолио</a></li>
                         <li class="mob-menu__item"><a class="mob-menu__link link" href="">Контакты</a></li>
-                    </ul>
-                </ul> 
                     </ul>
                 </div>
                 <div class="mob-menu__bottom ">
@@ -78,14 +75,15 @@
                                 info@devstudio.com</a>
                         </li>
                     </ul>
+                    </div>
+                    <div class="mob-menu-social">
                     <ul class="mob-menu__list-social list">
                         <li class="mob-menu__item-social"> <a class="mob-menu__link-social link" href="">Instagram</a> </li>
                         <li class="mob-menu__item-social"> <a class="mob-menu__link-social link" href="">Twitter</a> </li>
                         <li class="mob-menu__item-social"> <a class="mob-menu__link-social link" href="">Facebook</a> </li>
                         <li class="mob-menu__item-social"> <a class="mob-menu__link-social link" href="">LinkedIn</a> </li>
                     </ul>
-                </div>
-            </div>
+                    </div>
         </div>
     </header>
 <main>
@@ -169,7 +167,16 @@
     <div class="team__container container">
     <h2 class="title">Наша команда</h2>
     <ul class="list team__list">
-        <li class="team__item"><img src="./images/people1.jpg" alt="человек1" width="270">
+        <li class="team__item">
+            <picture>
+                <source srcset="./images/people1desk-min.jpg 1x,
+                                    ./images/people1desk_2x-min.jpg 2x" media="(min-width: 1200px)" />
+                <source srcset="./images/people1tab-min.jpg 1x,
+                                    ./images/people1tab_2x-min.jpg 2x" media="(min-width: 768px)" />
+                <source srcset="./images/people1mob-min.jpg 1x,
+                                    ./images/people1mob_2x-min.jpg 2x" media="(min-width: 320px)" />
+                <img src="./images/people1.jpg" alt="человек2" />
+            </picture>
             <h3 class="team__title">Игорь Демьяненко</h3>
             <p  class="team__text" lang="en">Product Designer</p>
             <div class="team__icon">
@@ -356,7 +363,7 @@
     </div>
 </section>
 <section class="section clients">
-    <div class="container clients-div">
+    <div class="container">
         <h2 class="title clients__title">Постоянные клиенты</h2>
         <ul class="list clients__list">
             <li class="clients__item">
@@ -408,64 +415,68 @@
 <footer class="page-footer">
     <div class="page-footer__overlay container">
         <div class="page-footer__common">
-        <div class="page-footer__content">
-    <a class="link logo page-footer__logo" href="">Web<span class="logo__label">Studio</span></a>
-    <address class="address">
-    <ul class="list contact">
-        <li class="contact__item"><a class="link contact__link contact__link--color" href="https://goo.gl/maps/32Xd4ZCNHeifT7mY8" target="blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-        <li class="contact__item"><a class="link contact__link" href="mailto:info@example.com">info@example.com</a></li>
-        <li class="contact__item"><a class="link contact__link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-    </ul>    
-    </address>
-    </div>
-    <div class="connect">
-        <h3 class="footer-title">присоединяйтесь</h3>
-        <ul class="social-network list">
-            <li class="social-network__item">
-                <a href="" class="social-network__link social-network__link--color">
-                    <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram-2"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social-network__item">
-                <a href="" class="social-network__link social-network__link--color">
-                    <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-twitter-1"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social-network__item">
-                <a href="" class="social-network__link social-network__link--color">
-                    <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-facebook-1"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="social-network__item">
-                <a href="" class="social-network__link social-network__link--color">
-                    <svg class="social-network__icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-linkedin-1"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </div>
-    </div>
-    <div class="envelop">
-        <p class="footer-title">Подпишитесь на рассылку</p>
-        <form class="page-form" action="#">
-            <div class="panel"></div>
-         <label for="form"></label>   
-         <input type="text" name="form" class="page-form__input" placeholder="E-mail" id="form">
-         <button class="page-form__button button" type="button">
-            <span>Подписаться</span>
-        <svg class="page-form__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-icon-send"></use>
-        </svg></button>   
-        </form>
-    </div>
-        
+            <div class="page-footer__content">
+                <a class="link logo page-footer__logo" href="">Web<span class="logo__label">Studio</span></a>
+                <address class="address">
+                    <ul class="list contact">
+                        <li class="contact__item"><a class="link contact__link contact__link--color"
+                                href="https://goo.gl/maps/32Xd4ZCNHeifT7mY8" target="blank" rel="noopener noreferrer">г.
+                                Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="contact__item"><a class="link contact__link"
+                                href="mailto:info@example.com">info@example.com</a></li>
+                        <li class="contact__item"><a class="link contact__link" href="tel:+380991111111">+38 099 111 11
+                                11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="connect">
+                <h3 class="footer-title">присоединяйтесь</h3>
+                <ul class="social-network connect__list list">
+                    <li class="social-network__item">
+                        <a href="" class="social-network__link social-network__link--color">
+                            <svg class="social-network__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-network__item">
+                        <a href="" class="social-network__link social-network__link--color">
+                            <svg class="social-network__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-network__item">
+                        <a href="" class="social-network__link social-network__link--color">
+                            <svg class="social-network__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-network__item">
+                        <a href="" class="social-network__link social-network__link--color">
+                            <svg class="social-network__icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="envelop">
+            <p class="footer-title">Подпишитесь на рассылку</p>
+            <form class="page-form" action="#">
+                <div class="panel"></div>
+                <label for="form"></label>
+                <input type="text" name="form" class="page-form__input" placeholder="E-mail" id="form">
+                <button class="page-form__button button" type="button">
+                    <span>Подписаться</span>
+                    <svg class="page-form__icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg></button>
+            </form>
+        </div>
+
     </div>
 </footer>
 <div class="backdrop is-hidden" data-modal>

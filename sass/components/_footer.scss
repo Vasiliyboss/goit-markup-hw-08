@@ -43,7 +43,7 @@
   text-transform: uppercase;
   color: var(--main-title-color);
 }
-.social-network {
+.connect__list {
   padding: 0;
   margin-top: 20px;
 }
@@ -155,5 +155,11 @@
   }
   .footer-title {
     text-align: start;
+  }
+  .page-footer__common {
+    padding-top: 0;
+  }
+  .envelop {
+    padding-top: 0;
   }
 }

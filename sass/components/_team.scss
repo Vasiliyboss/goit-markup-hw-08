@@ -1,7 +1,9 @@
+.team {
+  background-color: var(--main-btn-color);
+}
 .team__container {
   text-align: center;
   padding-top: 25px;
-  background-color: var(--main-btn-color);
 }
 .team__list {
   padding: 0;
@@ -39,18 +41,27 @@
   font-size: 16px;
   line-height: 1.19;
   color: var(--second-title-color);
+  margin-top: 30px;
 }
 .team__text {
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 10px;
 }
 .team__icon {
   text-align: center;
+  margin-top: 16px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 .social-network {
   display: flex;
   justify-content: center;
   align-content: center;
+  padding: 0;
+  margin: 0;
 }
 .social-network__item + .social-network__item {
   margin-left: 10px;

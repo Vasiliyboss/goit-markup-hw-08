@@ -31,9 +31,9 @@
   .about__column {
     background-color: var(--main-btn-color);
     height: 120px;
-  }
-  .about__icon {
-    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .about__title {
     font-weight: 700;
@@ -42,6 +42,10 @@
     letter-spacing: 0.03em;
     color: var(--second-title-color);
     text-align: start;
+    margin-top: 30px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   .about__text {
     font-weight: 400;
@@ -50,5 +54,6 @@
     letter-spacing: 0.03em;
     color: var(--main-text-color);
     text-align: start;
+    margin-top: 10px;
   }
 }
