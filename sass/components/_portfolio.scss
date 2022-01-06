@@ -59,13 +59,14 @@
     margin: -15px;
   }
 }
+@media screen and (max-width: 479px) {
+  .popup-window {
+    overflow-y: scroll;
+  }
+}
 .card-set__image {
   display: block;
   max-width: 100%;
-  height: auto;
-  @media screen and (max-width: 479px) {
-    height: 250px;
-  }
 }
 .card-set__item {
   width: 100%;

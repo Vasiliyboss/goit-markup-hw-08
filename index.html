@@ -52,6 +52,7 @@
             </button>
         </div>
         <div class="mob-menu is-hidden">
+            <div class="mob-container">
                 <div class="mob-menu__top">
                     <button class="mob-menu__close">
                         <svg class="mob-menu__icon" width="40" height="40">
@@ -75,15 +76,14 @@
                                 info@devstudio.com</a>
                         </li>
                     </ul>
-                    </div>
-                    <div class="mob-menu-social">
                     <ul class="mob-menu__list-social list">
                         <li class="mob-menu__item-social"> <a class="mob-menu__link-social link" href="">Instagram</a> </li>
                         <li class="mob-menu__item-social"> <a class="mob-menu__link-social link" href="">Twitter</a> </li>
                         <li class="mob-menu__item-social"> <a class="mob-menu__link-social link" href="">Facebook</a> </li>
                         <li class="mob-menu__item-social"> <a class="mob-menu__link-social link" href="">LinkedIn</a> </li>
                     </ul>
-                    </div>
+                </div>
+            </div>
         </div>
     </header>
 <main>
@@ -144,20 +144,23 @@
     </ul>
     </div>
 </section>
-<section class="hobbies section">
+<section class="hobbies">
     <div class="hobbies__container container">
     <h2 class="title">Чем мы занимаемся</h2>
     <ul class="list annexes">
         <li class="annexes__item">
-            <img src="./images/box_1.jpg" alt="пример1" width="370">
+            <img srcset="./images/box_1.jpg 1x, ./images/box_1-2x.jpg 2x"
+            src="./images/box_1.jpg" alt="пример1">
             <p class="annexes__text">Десктопные приложения</p>
             </li>
         <li class="annexes__item">
-            <img src="./images/box_2.jpg" alt="пример2" width="370">
+            <img srcset="./images/box_2.jpg 1x, ./images/box_2-2x.jpg 2x"
+            src="./images/box_2.jpg" alt="пример2">
             <p class="annexes__text">Мобильные приложения</p>
             </li>
         <li class="annexes__item">
-            <img src="./images/box_3.jpg" alt="пример3" width="370">
+            <img srcset="./images/box_3.jpg 1x, ./images/box_3-2x.jpg 2x"
+            src="./images/box_3.jpg" alt="пример3">
             <p class="annexes__text">Дизайнерские решения</p>
             </li>
     </ul>

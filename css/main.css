@@ -516,7 +516,7 @@ body {
 }
 
 .hobbies {
-  padding: 0;
+  padding-bottom: 94px;
 }
 
 .hobbies__container {
@@ -735,7 +735,6 @@ body {
 
 .page-footer__content {
   text-align: center;
-  padding-top: 104px;
 }
 
 .contact {
@@ -1216,16 +1215,15 @@ body {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .popup-window {
+    overflow-y: scroll;
+  }
+}
+
 .card-set__image {
   display: block;
   max-width: 100%;
-  height: auto;
-}
-
-@media screen and (max-width: 479px) {
-  .card-set__image {
-    height: 250px;
-  }
 }
 
 .card-set__item {
@@ -1321,7 +1319,7 @@ body {
   padding-bottom: 48px;
 }
 
-.mob-menu .container {
+.mob-menu .mob-container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1420,8 +1418,10 @@ body {
   color: var(--third-title-color);
 }
 
-.mob-menu__item-social:not(:first-child) {
-  margin-left: 10px;
+@media screen and (min-width: 479px) {
+  .mob-menu__item-social:not(:first-child) {
+    margin-left: 10px;
+  }
 }
 
 .mob-menu__item-social:not(:last-child):after {
@@ -1433,21 +1433,11 @@ body {
 }
 
 @media screen and (max-width: 479px) {
-  .mob-menu__item-social:not(:first-child) {
-    margin-left: 4px;
+  .mob-menu__list-social {
+    flex-wrap: wrap;
   }
-  .mob-menu__item-social:not(:last-child):after {
-    content: '';
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-    width: 1px;
-    margin-left: 4px;
-  }
-}
-
-@media screen and (min-width: 360px) {
-  .mob-menu-social {
-    margin-left: 40px;
+  .mob-menu__item-social {
+    margin: 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
