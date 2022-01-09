@@ -1439,5 +1439,14 @@ body {
   .mob-menu__item-social {
     margin: 5px;
   }
+  .mob-menu__bottom {
+    margin-top: 270px;
+  }
+  .mob-menu__item-tel {
+    margin-bottom: 22px;
+  }
+  .mob-menu__item-mail {
+    margin-bottom: 60px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

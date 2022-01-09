@@ -110,21 +110,13 @@
   .mob-menu__item-social {
     margin: 5px;
   }
+  .mob-menu__bottom {
+    margin-top: 270px;
+  }
+  .mob-menu__item-tel {
+    margin-bottom: 22px;
+  }
+  .mob-menu__item-mail {
+    margin-bottom: 60px;
+  }
 }
-// @media screen and (max-width: 479px) {
-//   .mob-menu__item-social:not(:first-child) {
-//     margin-left: 4px;
-//   }
-//   .mob-menu__item-social:not(:last-child):after {
-//     content: '';
-//     border: 1px solid rgba(33, 33, 33, 0.2);
-//     transform: rotate(90deg);
-//     width: 1px;
-//     margin-left: 4px;
-//   }
-// }
-// @media screen and (min-width: 360px) {
-//   .mob-menu-social {
-//     margin-left: 40px;
-//   }
-// }
